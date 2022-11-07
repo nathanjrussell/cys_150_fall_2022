@@ -8,6 +8,6 @@ with conn.cursor() as cursor:
     #conn.commit()
     results = cursor.fetchall()
     for result in results:
-        testStr = "Good Evening {0!s} {1!s}! Hope you had a great day in {2!s}, {3!s}".format(result['first_name'],result['last_name'],result['city'],result['state'])
+        testStr = "Good Morning {0!s} {1!s}! I Hope you have a great day in {2!s}, {3!s}".format(result['first_name'],result['last_name'],result['city'],result['state'])
         print(testStr)
     conn.close()
