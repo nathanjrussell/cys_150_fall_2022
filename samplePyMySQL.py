@@ -1,6 +1,5 @@
 import pymysql
 
-conn = pymysql.connect(user="nathan", password="qwerty123456", db="nathan", host="bctc-rds.cu5dqz2itieu.us-east-1.rds.amazonaws.com", cursorclass=pymysql.cursors.DictCursor)
 
 with conn.cursor() as cursor:
     sql = "select id_number, first_name, last_name, city, state from accounts"
